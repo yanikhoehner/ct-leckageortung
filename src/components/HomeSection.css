@@ -1,0 +1,113 @@
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-wrapper {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for readability */
+    color: #ffffff; /* White text for visibility */
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 80%;
+}
+.home-profile-section-mobile {
+    display: none;
+}
+.home-profile-section-desktop {
+    display:initial;
+}
+.section-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+}
+.section-title-2 {
+    font-size: 45px;
+    margin: 15px;
+}
+
+.profile-pic {
+    width: 250px; /* Increased size of the image */
+    height: 350px; /* Maintains aspect ratio */
+    border-radius: 20%;
+    object-fit:cover;
+    object-position: 50% 0%;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; /* Adjusted spacing for better visual separation */
+}
+
+.profile-title {
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+}
+
+.initials {
+    color: #feb20c; /* Example color: gold */
+    font-weight: bold;
+}
+
+.initials2 {
+    color: #fb841e; /* Example color: orange */
+    font-weight: bold;
+}
+
+.home-ection-description{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+@media (max-width: 800px) {
+    .home-section {
+        height: 140vh;
+
+    }
+    .home-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-text, .profile-pic, .profile-name, .profile-title {
+        width: 100%; /* Full width on smaller devices */
+    }
+    .home-profile-section-mobile {
+        display:initial;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-profile-section-desktop {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .home-section {
+        height: 160vh;
+
+    }
+}
+@media (max-width: 650px) {
+    .home-section {
+        height: 170vh;
+
+    }
+}
+@media (max-width: 500px) {
+    .home-section {
+        height: 185vh;
+
+    }
+}

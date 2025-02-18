@@ -1,0 +1,114 @@
+.footer {
+  background-color: rgba(185, 87, 3, 0.82); /* Transparentes Orange */
+  color: white; /* Weiße Schriftfarbe */
+  text-align: center;
+  font-weight: 300;
+  padding: 20px 0px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  border-top: 1px solid darkslategray; /* Dunkle Linie oben für visuelle Trennung */
+}
+
+.footer-link a:link ,a:active ,a:visited {
+  color: white; /* Weiße Schriftfarbe */
+  
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Einstellung der Transparenz */
+  font-size: 16px;
+}
+
+.footer-title {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.footer-title-text1 {
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+
+.footer-social-text{
+  font-size: 28px;
+}
+
+.footer-initials {
+  font-size: 35px;
+}
+
+
+.footer-section table {
+  width: 100%;
+  margin: 10px 0;
+  border-collapse: collapse;
+}
+
+.footer-section th, .footer-section td {
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid #feb20c; /* Weiße Linie unter jeder Zeile */
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.social-media-icon {
+  color: #feb20c; /* Gelbe Icons, keine Transparenz */
+  margin: 0 10px;
+  font-size: 35px;
+}
+
+.social-media-icon:hover {
+  color: #ffd966; /* Hellere Gelbe Farbe beim Hover */
+}
+
+.footer-link {
+  line-height: 2;
+}
+
+.footer-extra {
+  background-color: rgba(147, 101, 1, 0.85); /* Festes Gelb ohne Transparenz */
+  font-weight: 300;
+  color: white; /* Weiße Schrift */
+  width: 100%;
+  font-size: 20px; /* Größere Schrift */
+  text-align: left; /* Links ausgerichteter Text */
+  border-top: 1px solid darkslategray; /* Dunkle Linie oben */
+}
+
+.footer-extra2 {
+  margin: 25px;
+}
+.footer-counter {
+  margin-bottom: -15px;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section {
+    margin-bottom: 10px;
+  }
+
+  .footer-extra {
+    text-align: center; /* Zentrierter Text in mobiler Ansicht */
+  }
+}

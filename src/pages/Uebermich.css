@@ -1,0 +1,51 @@
+.uebermich-wrapper {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for readability */
+    color: #ffffff; /* White text for visibility */
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.uebermich-picture-wrapper-desktop {
+    display: flex;
+}
+.uebermich-picture-wrapper-mobile {
+    display: none;
+}
+.uebermich-title {
+}
+.uebermich-profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+    .uebermich-picture-wrapper-desktop {
+        display: none;
+    }
+    .uebermich-picture-wrapper-mobile {
+        display: flex;
+        Flex-direction: column;
+        align-items:center;
+        justify-content: center;
+
+    }
+    .uebermich-profile-picture {
+        width: 220px;
+        height: 220px;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-picture-wrapper{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 300px;
+        width: 90%;
+        margin: 10px;
+    }
+  }

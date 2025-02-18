@@ -1,0 +1,18 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('../public/images/bg-wallpaper.jpg') center center / cover no-repeat fixed;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding-top: 60px; /* Um Platz für die Navbar zu schaffen */
+}

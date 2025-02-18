@@ -1,0 +1,129 @@
+.nav {
+  flex-flow: row;
+  align-items: center;
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  width: 100%;
+  height: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(10, 10, 10, 0.95);
+}
+.navbar-logo img {
+  height: 90px; /* Größe des Logos */
+  flex: 1;
+  align-items: flex-start;
+  float: left;
+  z-index: 1000;
+}
+
+.navbar-div {
+  float: right;
+  margin-right: 13%;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.navbar-div-transition {
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.95) 10%, transparent 90%);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-content: center;
+}
+
+.navbar-item {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar-link {
+  color: #feb922; /* Primärfarbe für Links */
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+
+}
+
+.navbar-link:link .navbar-link:active {
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: #fb8e2f; /* Hover-Farbe */
+  text-decoration: none;
+}
+
+/* Keine Großbuchstaben */
+.navbar-link {
+  text-transform: none; /* Entfernt die Großbuchstaben */
+}
+
+/* Hamburger-Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 32px;
+  color: #feb922;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Menü-Hintergrund */
+    width: 100%;
+    padding: 20px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    height: 70px;
+    width: 100px;
+    align-content: center;
+    float: right;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(10, 10, 10, 0.95);
+  }
+  .navbar-logo img {
+    height: 70px; /* Größe des Logos */
+    flex: 1;
+    align-items: flex-start;
+    float: left;
+    z-index: 1000;
+  }
+
+}

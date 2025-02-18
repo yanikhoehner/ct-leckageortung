@@ -1,0 +1,43 @@
+.review-section {
+    padding: 5px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.section-title-review {
+    color: black;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.section-description-review {
+    color: #666;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.button {
+    background-color: #fb841e;  
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Entfernt Unterstreichung bei Links */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: #feb20c; /* Dunkleres Grün beim Hover */
+}
+
+.rate-us, .reviews-display {
+    margin-bottom: 20px;
+}
