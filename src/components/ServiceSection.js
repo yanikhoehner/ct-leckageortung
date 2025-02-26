@@ -29,7 +29,7 @@ function ServiceSection() {
   return (
     <section id="services" className="section service-section">
       <div className='section-title-wrapper'>
-        <h2 className="service-title">Meine Leistungen im Überblick</h2>
+        <h2 className="service-title">Meine Leistungen</h2>
       </div>
       <div className="service-blocks-container">
         {services.map(service => (
@@ -37,7 +37,7 @@ function ServiceSection() {
             <div className="service-front ">
             <img className='service-picture-front' src={service.picture}></img>
               <div className='service-title-block-front'>
-                <h3 className='service-title-text'>{service.title}</h3>
+                <h2 className='service-title-text'>{service.title}</h2>
               </div>
             </div>
             <div className="service-back">

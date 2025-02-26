@@ -113,8 +113,12 @@
         font-weight: 1200;
         rotate: -3deg;
       }
+      .service-title-block-front {
+        height: 70px;
+        
+    }
     .service-title-text {
-        margin: 10p´´5x;
+        margin: 10px;
         text-align: center;
         font-size: 14px;
     }

@@ -15,12 +15,16 @@ import Datenschutz from './pages/Privacy.js';
 import Home from './pages/Home.js';
 import Uebermich from './pages/Uebermich.js';
 import ScrollToTop from './components/ScrollToTop.js';
+//test
 function App() {
   return (
     <Router>
+      <div className='bg-container'></div>
       <div className="app">
+      
         <Navbar />
         <main className="main-content">
+          
         <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />

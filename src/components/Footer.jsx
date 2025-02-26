@@ -22,7 +22,7 @@ function Footer() {
     <>
       <footer className="footer">
         <div className="footer-section">
-          <h1 className="footer-title"><span className="footer-initials">C</span>hristian <span className="footer-initials">T</span>reitz</h1><br />
+          <h2 className="footer-title"><span className="footer-initials">C</span>hristian <span className="footer-initials">T</span>reitz</h2><br />
           <div className='footer-title-text1'>
             Beratung | Leckageortung | Reparatur<br />
             In der Steubach 14, 57614 Woldert<br />

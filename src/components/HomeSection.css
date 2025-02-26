@@ -33,6 +33,11 @@
     font-size: 45px;
     margin: 15px;
 }
+.section-title-2-2 {
+        font-size: 45px;
+        margin: 0px;
+    }
+
 
 .profile-pic {
     width: 250px; /* Increased size of the image */

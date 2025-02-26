@@ -7,7 +7,7 @@ function HomeSection() {
       <div className='home-wrapper'>
         <div className="section-text">
         
-          <h1 className="section-title-2">Willkommen bei <br></br><span className="initials">C</span>hristian <span className="initials2">T</span>reitz </h1>
+          <p className="section-title-2">Willkommen bei <br></br><h1 className='section-title-2-2'><span className="initials">C</span>hristian <span className="initials2">T</span>reitz </h1></p>
           <div className='home-profile-section-mobile'>
             <img src={portrait} alt="CEO Christian Treitz" className="profile-pic" />
             <div className="profile-name"><span className="initials">C</span>hristian <span className="initials2">T</span>reitz</div>

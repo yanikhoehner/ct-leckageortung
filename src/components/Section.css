@@ -1,6 +1,5 @@
 .section {
     color: white;
-    background: url('../../public/images/bg-wallpaper.jpg') center center / cover no-repeat fixed;
     border-bottom: 4px solid #555;
     text-shadow: 1px 1px 2px black;
   }
