@@ -8,15 +8,28 @@ import { useEffect, useState } from "react";
 function Footer() {
   const [views, setViews] = useState(0);
   
-    useEffect(() => {
-      // Abrufen der gespeicherten Anzahl der Aufrufe
-      const storedViews = localStorage.getItem("pageViews");
+  useEffect(() => {
+    // Create a unique identifier for this session if it doesn't exist
+    const sessionId = sessionStorage.getItem('sessionId') || 
+                      Date.now().toString(36) + Math.random().toString(36).substring(2);
+    
+    if (!sessionStorage.getItem('sessionId')) {
+      sessionStorage.setItem('sessionId', sessionId);
+      
+      // Increment page views in localStorage
+      const storedViews = localStorage.getItem("totalPageViews");
       const count = storedViews ? parseInt(storedViews, 10) : 0;
       const newCount = count + 1;
-  
+      
+      localStorage.setItem("totalPageViews", newCount);
       setViews(newCount);
-      localStorage.setItem("pageViews", newCount);
-    }, []);
+    } else {
+      // Just display the current count without incrementing
+      const storedViews = localStorage.getItem("totalPageViews");
+      const count = storedViews ? parseInt(storedViews, 10) : 0;
+      setViews(count);
+    }
+  }, []);
 
   return (
     <>
@@ -29,8 +42,8 @@ function Footer() {
          
          
             <a>0151 57889069</a><br />
-            <a className="footer-link" href="mailto:info@ct-dienstleistungen.de">info@ct-leckageortung.de</a><br />
-            <a className="footer-link" href="http://www.ct-dienstleistungen.de" target="_blank" rel="noopener noreferrer">www.ct-leckageortung.de</a>
+            <a className="footer-link" href="mailto:info@ct-leckageortung.de">info@ct-leckageortung.de</a><br />
+            <a className="footer-link" href="http://www.ct-leckageortung.de" target="_blank" rel="noopener noreferrer">www.ct-leckageortung.de</a>
           </div>
         </div>
         <div className="footer-section">
