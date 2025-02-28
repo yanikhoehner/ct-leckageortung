@@ -9,26 +9,51 @@ function Footer() {
   const [views, setViews] = useState(0);
   
   useEffect(() => {
-    // Create a unique identifier for this session if it doesn't exist
-    const sessionId = sessionStorage.getItem('sessionId') || 
-                      Date.now().toString(36) + Math.random().toString(36).substring(2);
+    // Function to fetch the total page views from the server
+    const fetchTotalPageViews = async () => {
+      try {
+        // Try to get the total views from localStorage first as a fallback
+        const storedViews = localStorage.getItem("totalPageViews") || "0";
+        setViews(parseInt(storedViews, 10));
+        
+        // Create a unique identifier for this session if it doesn't exist
+        const sessionId = sessionStorage.getItem('sessionId') || 
+                          Date.now().toString(36) + Math.random().toString(36).substring(2);
+        
+        if (!sessionStorage.getItem('sessionId')) {
+          sessionStorage.setItem('sessionId', sessionId);
+          
+          // Increment the global counter
+          const currentCount = parseInt(localStorage.getItem("totalPageViews") || "0", 10);
+          const newCount = currentCount + 1;
+          
+          // Store the updated count in localStorage
+          localStorage.setItem("totalPageViews", newCount);
+          
+          // Update the state with the new count
+          setViews(newCount);
+          
+          // Here you would typically also send this information to a server
+          // to store the global count for all users
+          // For example:
+          // await fetch('/api/increment-page-views', {
+          //   method: 'POST',
+          //   headers: { 'Content-Type': 'application/json' },
+          //   body: JSON.stringify({ sessionId })
+          // });
+        }
+      } catch (error) {
+        console.error("Error updating page views:", error);
+      }
+    };
     
-    if (!sessionStorage.getItem('sessionId')) {
-      sessionStorage.setItem('sessionId', sessionId);
-      
-      // Increment page views in localStorage
-      const storedViews = localStorage.getItem("totalPageViews");
-      const count = storedViews ? parseInt(storedViews, 10) : 0;
-      const newCount = count + 1;
-      
-      localStorage.setItem("totalPageViews", newCount);
-      setViews(newCount);
-    } else {
-      // Just display the current count without incrementing
-      const storedViews = localStorage.getItem("totalPageViews");
-      const count = storedViews ? parseInt(storedViews, 10) : 0;
-      setViews(count);
-    }
+    fetchTotalPageViews();
+    
+    // Set up a periodic check to update the view count from the server
+    // This would be used in a real implementation with a backend
+    // const interval = setInterval(fetchTotalPageViews, 60000); // every minute
+    
+    // return () => clearInterval(interval);
   }, []);
 
   return (
@@ -57,7 +82,7 @@ function Footer() {
             </tbody>
           </table>
           <div>
-            <h4 className='footer-counter'>Seitenaufrufe:</h4>
+            <h4 className='footer-counter'>Gesamte Seitenaufrufe:</h4>
             <h4>{views}</h4>
           </div>
         </div>

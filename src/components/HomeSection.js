@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomeSection.css';
-import portrait from './images/portrait_01.jpg';
+import portrait1 from './images/portrait_01.jpg';
+import portrait2 from './images/portrait_01_2.jpg';
 function HomeSection() {
   return (
     <section id="home" className="section home-section">
@@ -9,7 +10,7 @@ function HomeSection() {
         
           <p className="section-title-2">Willkommen bei <br></br><h1 className='section-title-2-2'><span className="initials">C</span>hristian <span className="initials2">T</span>reitz </h1></p>
           <div className='home-profile-section-mobile'>
-            <img src={portrait} alt="CEO Christian Treitz" className="profile-pic" />
+            <img src={portrait2} alt="CEO Christian Treitz" className="profile-pic" />
             <div className="profile-name"><span className="initials">C</span>hristian <span className="initials2">T</span>reitz</div>
             <div className="profile-title">Geschäftsführer</div>
         </div>
@@ -21,7 +22,7 @@ Sind Sie auf der Suche nach einem Fachmann, der Ihnen dabei hilft, Rohrbrüche s
           </p>
         </div>
         <div className='home-profile-section-desktop'>
-          <img src={portrait} alt="CEO Christian Treitz" className="profile-pic" />
+          <img src={portrait1} alt="CEO Christian Treitz" className="profile-pic" />
           <div className="profile-name"><span className="initials">C</span>hristian <span className="initials2">T</span>reitz</div>
           <div className="profile-title">Geschäftsführer</div>
         </div>

@@ -9,13 +9,14 @@ import ProjectSection from './components/ProjectSection';
 import ReviewSection from './components/ReviewSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import CookieConsent from './components/CookieConsent';
 import "@fontsource/montserrat";
 import Impressum from './pages/Impressum.js';
 import Datenschutz from './pages/Privacy.js';
 import Home from './pages/Home.js';
 import Uebermich from './pages/Uebermich.js';
 import ScrollToTop from './components/ScrollToTop.js';
-//test
+
 function App() {
   return (
     <Router>
@@ -34,6 +35,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <CookieConsent />
       </div>
         
      </Router>

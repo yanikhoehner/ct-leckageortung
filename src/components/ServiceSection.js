@@ -18,7 +18,7 @@ function ServiceSection() {
     { title: 'Thermografische Darstellung', description: 'Mithilfe einer Wärmebildkamera erfasse ich Temperaturunterschiede und identifiziere Leckagen schnell und etfizient.',picture: thermografie2 },
     { title: 'Kamerainspektion/Endoskopie an Kanalleitungen', description: 'Eine gründliche Inspektion von Abwasserleitungen, um Verstopfungen oder Beschädigungen sichtbar zu machen.',picture: endoskopie1 },
     { title: 'Elektroakustische Ortung', description: 'Das Horchen auf Armaturen und Wänden ermöglicht selbst kleinste Undichtigkeiten akustisch wahrzunehmen und somit eine zielgenaue Intervention.',picture: stetoskop },
-    { title: 'Schwarzlichtverfahren an Abwasserleitungen oder in Leitungsschächten', description: 'Leckage­prüfung mit Kontrast­pulver und einer speziellen Schwarz­licht­lampe. So werden Lecks „sichtbar“ gemacht.' ,picture: schwarzlicht2},
+    { title: 'Schwarzlichtverfahren an Abwasserleitungen oder in Leitungsschächten', description: 'Leckage­prüfung mit Kontrast­pulver und einer speziellen Schwarz­licht­lampe. So werden Lecks „sichtbar" gemacht.' ,picture: schwarzlicht2},
     { title: 'Druckprobe mit Formiergas in Wasser & Heizungsleitungen', description: 'Überprüfung des Drucks über einen bestimmten Zeitraum innerhalb von Leitungsabschnitten, um mögliche Rohrbrüche einzugrenzen. Ggf. Mithilfe von Suchgerät.',picture: rohrbruch  },
     { title: 'Freilegen von Rohrbrüchen & Ausführen von Notreparatur', description: 'Bauteilöffnung und freilegen von Leckagen, wenn möglich provisorisches Abdichten oder ausführen von Kleinreparaturen an Rohrleitungen' ,picture: reparatur1},
     { title: 'Vermietung von Bautrocknern', description: 'Vermietung von hochwertigen Bautrocknern, Lüftern, sowie Luftreinigern zum Schutz vor Viren und Schimmelpilzen. Gerne stehe ich Ihnen auch bei Rückbau und Sanierungsmaßnahmen zur Seite.',picture: bautrockner4 },
@@ -28,7 +28,7 @@ function ServiceSection() {
 
   return (
     <section id="services" className="section service-section">
-      <div className='section-title-wrapper'>
+      <div className="service-header-container">
         <h2 className="service-title">Meine Leistungen</h2>
       </div>
       <div className="service-blocks-container">

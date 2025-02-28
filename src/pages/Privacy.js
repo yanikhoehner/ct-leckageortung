@@ -27,6 +27,11 @@ function Datenschutz() {
           Cookies sind Informationen, die automatisch nach strengen Regeln und mit für Sie überprüfbaren Inhalten auf Ihrem Rechner abgelegt werden. Wir verwenden Cookies ausschließlich, um Ihnen in unserer Website mehr Bequemlichkeit bieten zu können, z.B. um zu erreichen, dass Sie nicht jedes Mal neu Ihr Passwort oder Ihre Präferenzen eingeben müssen. Eine Zuordnung von Cookies zu personenbezogenen Profilen findet nicht statt.
           <br></br>
           <br></br>
+          <b>Cookie-Einstellungen</b>
+          <br></br>
+          Sie können Ihre Cookie-Einstellungen jederzeit ändern. Wenn Sie Cookies ablehnen, werden nur die technisch notwendigen Cookies verwendet, die für den Betrieb der Website unerlässlich sind. Alle anderen Cookies werden nicht gesetzt. Sie können Ihre Entscheidung jederzeit ändern, indem Sie Ihren Browser-Cache leeren und die Website neu laden.
+          <br></br>
+          <br></br>
           <b>Eingesetzte Technologien</b>
           <br></br>
           In Teilen dieser Website werden eventuell im Internet weit verbreitete Technologien wie JavaScript, Java, Flash oder ActiveX benutzt, um Ihnen die gewünschten Informationen für Sie bequemer vermitteln zu können. In keinem Fall werden diese Technologien von uns dazu benutzt, um persönliche Daten auszuspähen oder Daten auf Ihrem Rechner zu manipulieren.
@@ -49,7 +54,7 @@ function Datenschutz() {
           <br></br>
           <b>Haftungsausschluss</b>
           <br></br>
-          Diese Website bildet den temporären Stand eines kontinuierlichen Arbeitsprozesses ab. Obwohl bei der Zusammenstellung der auf unserer Webseite enthaltenen Informationen größte Sorgfalt angewandt wurde, kann Christian Treitz für die Aktualität, Richtigkeit oder Vollständigkeit keine Gewähr übernehmen. Dies gilt auch für alle Verbindungen (“Links”), auf die diese Website direkt oder indirekt verweist. Christian Treitz ist für den Inhalt einer Seite, die mit einem solchen Link erreicht wird, nicht verantwortlich.
+          Diese Website bildet den temporären Stand eines kontinuierlichen Arbeitsprozesses ab. Obwohl bei der Zusammenstellung der auf unserer Webseite enthaltenen Informationen größte Sorgfalt angewandt wurde, kann Christian Treitz für die Aktualität, Richtigkeit oder Vollständigkeit keine Gewähr übernehmen. Dies gilt auch für alle Verbindungen ("Links"), auf die diese Website direkt oder indirekt verweist. Christian Treitz ist für den Inhalt einer Seite, die mit einem solchen Link erreicht wird, nicht verantwortlich.
           In keinem Fall kann Christian Treitz für etwaige Schäden irgendwelcher Art verantwortlich gemacht werden, die durch die Benutzung oder im Zusammenhang mit der Benutzung der hier bereitgestellten Informationen entstehen, seien es direkte oder indirekte Schäden bzw. Folgeschäden einschließlich entgangenen Gewinns, oder Schäden, die aus dem Verlust von Daten entstehen.
           Wir behalten uns Änderungen der Informationen auf diesem Server ohne vorherige Ankündigung vor. 
           <br></br>
