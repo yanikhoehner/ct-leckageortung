@@ -11,7 +11,9 @@ import stetoskop from "./images/Stetoskop/stetoskop01.jpg";
 import thermografie2 from "./images/Thermografie/thermografie2.jpg";
 import wasserschaden_allg from "./images/wasserschaden allgemein.jpg";
 import beratung from './images/Beratung.jpg';
-
+import rueckbau from './images/rueckbau.jpg';
+import wiederherstellung from './images/wiederherstellung.jpg';
+import einauslagern from './images/ein_und_auslagern.jpg';
 function ServiceSection() {
   const services = [
     { title: 'Feuchtigkeitsmessungen mit Oberflächen & Tiefensonden', description: 'Oberflächen sowie Tiefenmessungen in Wand und Boden, um potenzielle Schäden frühzeitig zu erkennen oder Kontrollmessungen durchzuführen sowie Rohrbrüche einzugrenzen.',picture: messung1},
@@ -21,9 +23,11 @@ function ServiceSection() {
     { title: 'Schwarzlichtverfahren an Abwasserleitungen oder in Leitungsschächten', description: 'Leckage­prüfung mit Kontrast­pulver und einer speziellen Schwarz­licht­lampe. So werden Lecks „sichtbar" gemacht.' ,picture: schwarzlicht2},
     { title: 'Druckprobe mit Formiergas in Wasser & Heizungsleitungen', description: 'Überprüfung des Drucks über einen bestimmten Zeitraum innerhalb von Leitungsabschnitten, um mögliche Rohrbrüche einzugrenzen. Ggf. Mithilfe von Suchgerät.',picture: rohrbruch  },
     { title: 'Freilegen von Rohrbrüchen & Ausführen von Notreparatur', description: 'Bauteilöffnung und freilegen von Leckagen, wenn möglich provisorisches Abdichten oder ausführen von Kleinreparaturen an Rohrleitungen' ,picture: reparatur1},
-    { title: 'Vermietung von Bautrocknern', description: 'Vermietung von hochwertigen Bautrocknern, Lüftern, sowie Luftreinigern zum Schutz vor Viren und Schimmelpilzen. Gerne stehe ich Ihnen auch bei Rückbau und Sanierungsmaßnahmen zur Seite.',picture: bautrockner4 },
-    { title: 'Umfassende Beratung', description: 'Profitieren Sie von meinem Fachwissen und erhalten Sie wertvolle Tipps im Umgang mit Wasserschäden. Gerne übernehme ich eine ausführliche Dokumentation Ihres Schadens für die Versicherung.', picture: beratung}
-  
+    { title: 'Vermietung von Bautrocknern', description: 'Vermietung von hochwertigen Bautrocknern, Lüftern, sowie Luftreinigern zum Schutz vor Viren und Schimmelpilzen. Gerne übernehme ich eine wöchentliche Dokumentation des Trocknungsfortschritts.',picture: bautrockner4 },
+    { title: 'Umfassende Beratung', description: 'Profitieren Sie von meinem Fachwissen und erhalten Sie wertvolle Tipps im Umgang mit Wasserschäden. Gerne übernehme ich eine ausführliche Dokumentation Ihres Schadens für die Versicherung.', picture: beratung},
+    { title: 'Rückbau und Entsorgung im Schadenfall', description: 'Wir übernehmen den fachmännischen Rückbau aller Betroffenen und ggf. mit Schimmelpilzen verunreinigten Baustoffe sowie die Entsorgung von Schutt und Müll.' ,picture: rueckbau},
+    { title: 'Wiederherstellungsarbeiten nach Trocknung & Desinfektion der Flächen', description: 'Wir stehen Ihnen auch bei den Wiederherstellungsarbeiten nach einem Wasserschaden zur Seite. Dabei greifen wir auf Baustoffe mit kurzer Trocknungszeit zurück.',picture: wiederherstellung },
+    { title: 'Aus & Wieder-Einlagerung von Hausrat im Schadenfall', description: 'Wir Lagern für Sie ihren Hausrat fürsorglich verpackt und geschützt in einem ggf. beheizten Container.  Dabei übernehmen wir auch den Transport und den Wiederaufbau ihrer Möbel.', picture: einauslagern}
   ];
 
   return (

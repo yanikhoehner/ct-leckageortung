@@ -7,7 +7,7 @@ function Impressum() {
       <div className='impressum-wrapper'>
         <h1>Impressum</h1>
         <p>
-          <b>Christian Treitz - Beratung | Leckageortung | Reparatur</b>
+          <b>Christian Treitz - Beratung - Leckageortung - Reparatur</b>
           <br></br>
           In der Steubach 14<br></br>
           57614 Woldert<br></br>
