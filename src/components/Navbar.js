@@ -17,7 +17,6 @@ function Navbar() {
   };
 
   useEffect(() => {
-    // Function to handle clicks outside the menu
     const handleClickOutside = (event) => {
       if (
         isOpen && 
@@ -30,10 +29,8 @@ function Navbar() {
       }
     };
 
-    // Add event listener when the menu is open
     document.addEventListener('mousedown', handleClickOutside);
     
-    // Clean up the event listener
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -100,6 +97,11 @@ function Navbar() {
             <li className="navbar-item">
               <Link to="/uebermich" className="navbar-link" onClick={closeMenu}>
                 <a className='navbar-link'>Über mich</a>
+              </Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/partners" className="navbar-link" onClick={closeMenu}>
+                <a className='navbar-link'>Partner</a>
               </Link>
             </li>
           </ul>

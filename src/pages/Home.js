@@ -8,20 +8,18 @@ import CertificationSection from '../components/CertificationSection';
 import ProjectSection from '../components/ProjectSection';
 import ReviewSection from '../components/ReviewSection';
 import ContactSection from '../components/ContactSection';
-
+import PartnerSection from '../components/PartnerSection';
 import "@fontsource/montserrat";
-
 
 function Home() {
   return (
-            <div>
-                <HomeSection />
-          <ServiceSection />
-          <ContactSection />
-          <ReviewSection />
-            </div>
-       
-
+    <div>
+      <HomeSection />
+      <ServiceSection />
+      <ContactSection />
+      <ReviewSection />
+      <PartnerSection />
+    </div>
   );
 }
 

@@ -1,0 +1,111 @@
+.partners-container {
+    padding: 20px;
+}
+
+.partners-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.emig-button {
+    background-color: grey;  
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Entfernt Unterstreichung bei Links */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.emig-button:hover {
+    background-color: lightgray; /* Dunkleres Grün beim Hover */
+}
+
+.partners-title {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.partners-content {
+    line-height: 1.8;
+}
+
+.partners-subtitle {
+    font-size: 1.2em;
+    margin: 20px 0 10px 0;
+}
+
+.partners-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.partners-list li {
+    margin-bottom: 10px;
+}
+
+.partners-logo {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
+.partners-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.partners-visit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .partners-container {
+        padding: 0px;
+    }
+    .partners-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .partners-title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .partners-logo {
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .partners-content {
+        line-height: 1.4;
+    }
+
+    .partners-list li {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partners-title {
+        font-size: 1.2em;
+    }
+
+    .partners-logo {
+        width: 150px;
+    }
+}

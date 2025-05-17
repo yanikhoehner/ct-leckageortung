@@ -15,6 +15,7 @@ import Impressum from './pages/Impressum.js';
 import Datenschutz from './pages/Privacy.js';
 import Home from './pages/Home.js';
 import Uebermich from './pages/Uebermich.js';
+import Partners from './pages/Partners.js';
 import ScrollToTop from './components/ScrollToTop.js';
 
 function App() {
@@ -22,23 +23,21 @@ function App() {
     <Router>
       <div className='bg-container'></div>
       <div className="app">
-      
         <Navbar />
         <main className="main-content">
-          
-        <ScrollToTop />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/uebermich" element={<Uebermich />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
+            <Route path="/partners" element={<Partners />} />
           </Routes>
         </main>
         <Footer />
         <CookieConsent />
       </div>
-        
-     </Router>
+    </Router>
   );
 }
 
