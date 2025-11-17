@@ -99,11 +99,11 @@ function Navbar() {
                 <a className='navbar-link'>Über mich</a>
               </Link>
             </li>
-            <li className="navbar-item">
+            {/* <li className="navbar-item">
               <Link to="/partners" className="navbar-link" onClick={closeMenu}>
                 <a className='navbar-link'>Partner</a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
