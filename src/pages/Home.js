@@ -18,7 +18,7 @@ function Home() {
       <ServiceSection />
       <ContactSection />
       <ReviewSection />
-      <PartnerSection />
+      {/* <PartnerSection /> */}
     </div>
   );
 }
